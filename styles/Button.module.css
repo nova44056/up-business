@@ -1,0 +1,19 @@
+.btn {
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+  padding: 0.7rem 1.4rem;
+  border-radius: 8px;
+}
+
+.primary {
+  color: white;
+  background-color: var(--purple);
+  font-family: "SF Pro Display Semibold";
+}
+
+.secondary {
+  border: 1px solid var(--purple);
+  color: var(--purple);
+}

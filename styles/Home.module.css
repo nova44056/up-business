@@ -1,121 +1,833 @@
-.container {
-  min-height: 100vh;
-  padding: 0 0.5rem;
+.landingpage > :not(:first-child) {
+  margin-top: 2rem;
+}
+
+.levelupbusiness {
+  display: flex;
+  max-height: 700px;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.levelupbusiness > .content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
 
-.main {
-  padding: 5rem 0;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.levelupbusiness > .content > :not(:last-child) {
+  margin-bottom: 1rem;
 }
 
-.footer {
-  width: 100%;
-  height: 100px;
-  border-top: 1px solid #eaeaea;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
-
-.title a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
+.levelupbusiness > .content > :last-child > :not(:last-child) {
+  margin-right: 1rem;
 }
 
 .title {
-  margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  color: var(--purple);
+  font-size: 2.5rem;
 }
 
-.title,
-.description {
-  text-align: center;
+.title > .levelup {
+  color: var(--pink);
 }
 
-.description {
-  line-height: 1.5;
-  font-size: 1.5rem;
+.subtitle {
+  color: var(--black);
+  font-size: medium;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
+.letstalk {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.letstalk > svg {
+  margin-left: 4px;
+}
+
+.image {
+  position: relative;
+}
+
+.levelupbusiness > .image > div > img {
+  left: -60px !important;
+}
+
+.levelupbusiness
+  > .content
+  > :last-child
+  > :last-child:hover
+  > .letstalk
+  > svg {
+  transform: translateX(8px);
+}
+
+.ellipse {
+  display: none;
+  position: absolute;
+  width: 10vw;
+  height: 10vw;
+  background-color: #dcf0ff;
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.topright {
+  top: 0;
+  right: 50px;
+}
+
+.bottomleft {
+  bottom: 0px;
+  left: 150px;
+}
+
+.bottomright {
+  bottom: 0px;
+  right: -15px;
+}
+
+.logobrands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logobrands > .subtitle {
+  font-family: "SF Pro Display Semibold";
+  color: var(--purple);
+  font-size: 18px;
+}
+
+.logobrands > .subtitle > svg {
+  font-size: 10px;
+  color: var(--purple);
+  margin: 0 0.5rem;
+}
+
+.logobrands > .logos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 14px 37px -10px rgba(178, 178, 178, 0.17);
   flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
 }
 
-.card {
-  margin: 1rem;
+.businessshop {
+  display: flex;
+  max-height: 700px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.businessshop > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.businessshop > .content > div > .title {
+  font-size: 40px;
+}
+
+.businessshop > .content > div > .subtitle {
+  font-family: "SF Pro Display Bold";
+  color: var(--pink);
+}
+
+.businessshop > .content > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.businessshop > .content > :last-child {
+  display: flex;
+  color: var(--purple);
+}
+
+.businessshop > .content > :last-child span {
+  position: relative;
+}
+
+.businessshop > .content > :last-child > div.active > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 1;
+  z-index: 9999;
+}
+.businessshop > .content > :last-child > div > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 0.31;
+  z-index: -1;
+}
+
+.businessshop > .content > :last-child > :first-child {
+  display: flex;
+  align-items: center;
+}
+
+.businessshop > .content > :last-child > :first-child > :not(:last-child) {
+  margin-right: 4px;
+}
+
+.businessshop > .content > :last-child > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.businessshop > .image > div > img {
+  left: -60px !important;
+}
+
+.webdesign {
+  display: flex;
+  max-height: 700px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.webdesign > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.webdesign > .content > div > .title {
+  font-size: 40px;
+}
+
+.webdesign > .content > div > .subtitle {
+  font-family: "SF Pro Display Bold";
+  color: var(--pink);
+}
+
+.webdesign > .content > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.webdesign > .content > :last-child {
+  display: flex;
+  color: var(--purple);
+}
+
+.webdesign > .content > :last-child span {
+  position: relative;
+}
+
+.webdesign > .content > :last-child > div.active > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 1;
+  z-index: 9999;
+}
+.webdesign > .content > :last-child > div > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 0.31;
+  z-index: -1;
+}
+
+.webdesign > .content > :last-child > :first-child {
+  display: flex;
+  align-items: center;
+}
+
+.webdesign > .content > :last-child > :first-child > :not(:last-child) {
+  margin-right: 4px;
+}
+
+.webdesign > .content > :last-child > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.webdesign > .image > div > img {
+  left: -60px !important;
+}
+
+/* design messages */
+.designmessages {
+  display: flex;
+  max-height: 700px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.designmessages > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.designmessages > .content > div > .title {
+  font-size: 40px;
+}
+
+.designmessages > .content > div > .subtitle {
+  font-family: "SF Pro Display Bold";
+  color: var(--pink);
+}
+
+.designmessages > .content > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.designmessages > .content > :last-child {
+  display: flex;
+  color: var(--purple);
+}
+
+.designmessages > .content > :last-child span {
+  position: relative;
+}
+
+.designmessages > .content > :last-child > div.active > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 1;
+  z-index: 9999;
+}
+.designmessages > .content > :last-child > div > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 0.31;
+  z-index: -1;
+}
+
+.designmessages > .content > :last-child > :first-child {
+  display: flex;
+  align-items: center;
+}
+
+.designmessages > .content > :last-child > :first-child > :not(:last-child) {
+  margin-right: 4px;
+}
+
+.designmessages > .content > :last-child > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.designmessages > .image > div > img {
+  left: -60px !important;
+}
+
+.maintenancedesign {
+  display: flex;
+  max-height: 700px;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+}
+
+.maintenancedesign > .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.maintenancedesign > .content > div > .title {
+  font-size: 40px;
+}
+
+.maintenancedesign > .content > div > .subtitle {
+  font-family: "SF Pro Display Bold";
+  color: var(--pink);
+}
+
+.maintenancedesign > .content > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.maintenancedesign > .content > :last-child {
+  display: flex;
+  color: var(--purple);
+}
+
+.maintenancedesign > .content > :last-child span {
+  position: relative;
+}
+
+.maintenancedesign > .content > :last-child > div.active > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 1;
+  z-index: 9999;
+}
+.maintenancedesign > .content > :last-child > div > span::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -4px;
+  border-radius: 8px;
+  left: 0;
+  background-color: var(--purple);
+  opacity: 0.31;
+  z-index: -1;
+}
+
+.maintenancedesign > .content > :last-child > :first-child {
+  display: flex;
+  align-items: center;
+}
+
+.maintenancedesign > .content > :last-child > :first-child > :not(:last-child) {
+  margin-right: 4px;
+}
+
+.maintenancedesign > .content > :last-child > :not(:last-child) {
+  margin-right: 1rem;
+}
+
+.maintenancedesign > .image > div > img {
+  left: -60px !important;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services > :first-child {
+  text-align: center;
+  max-width: 700px;
+}
+
+.services > :first-child > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.services > :first-child > .title {
+  font-family: "SF Pro Display Semibold";
+  font-size: 2rem;
+}
+
+.services > :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.services > .cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.services > .cards > :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.services > .cards > .card {
+  background-color: var(--blue);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 16px;
+}
+
+.services > .cards > .card > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.services > .cards > .card > .title {
+  font-size: 1.5rem;
+  font-family: "SF Pro Display Semibold";
+}
+
+.quote {
+  position: absolute;
+  font-size: 3rem;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials > :first-child {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: max-content;
+}
+
+.testimonials > :first-child > .title {
+  font-family: "SF Pro Display Semibold";
+  font-size: 2rem;
+}
+
+.testimonials > div:nth-child(2) {
+  display: flex;
+  max-height: 700px;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.testimonials > div:nth-child(2) > .image {
+  display: none;
+}
+
+.testimonials > div:nth-child(2) > .content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 4rem 0;
+  height: max-content;
+}
+
+.testimonials > div:nth-child(2) > .content > .card {
+  display: flex;
   padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 45%;
+  box-shadow: 0 14px 37px -10px rgba(178, 178, 178, 0.17);
+  border-radius: 8px;
 }
 
-.card:hover,
-.card:focus,
-.card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+.testimonials > div:nth-child(2) > .content > .card > :not(:last-child) {
+  margin-right: 1rem;
 }
 
-.card h2 {
-  margin: 0 0 1rem 0;
+.testimonials > div:nth-child(2) > .content > .card > :first-child {
+  min-width: 50px;
+}
+
+.testimonials2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonials2 > .card {
+  display: flex;
+  flex-direction: column;
+  color: var(--black);
+}
+
+.testimonials2 > :not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.startyourbusinessnow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 0;
+}
+
+.startyourbusinessnow > :not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.startyourbusinessnow .title {
+  font-family: "SF Pro Display Bold";
   font-size: 1.5rem;
 }
 
-.card p {
-  margin: 0;
+.startyourbusinessnow > :last-child > :last-child:hover > .letstalk > svg {
+  transform: translateX(8px);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 3rem;
+  background-color: var(--light-blue-1);
+  padding: 2rem;
+  color: var(--black);
+}
+
+.footer > .info > :first-child {
+  font-size: 1.5rem;
+}
+
+.footer > .info > :nth-child(2) {
+  padding-left: 8px;
+  color: var(--black);
+  font-size: 14px;
+}
+
+.footer > .info > .socials {
+  display: flex;
+  justify-content: space-evenly;
+  max-width: 300px;
+}
+
+.footer > .info > .socials > .social {
+  background-color: var(--light-blue-2);
+  padding: 0.9rem;
+  border-radius: 50%;
+}
+
+.footer > .info > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer .title {
   font-size: 1.25rem;
-  line-height: 1.5;
+  font-family: "SF Pro Display Semibold";
+  margin-bottom: 1rem;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
+.footer .aboutus ul {
+  list-style: none;
 }
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+.footer .aboutus ul li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer .location div:nth-child(2) div {
+  display: flex;
+}
+
+.footer .location div:nth-child(2) div :first-child {
+  min-width: 24px;
+  fill: var(--purple);
+  stroke: var(--purple);
+}
+
+.footer .location div:nth-child(2) :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.footer .contactus div:nth-child(2) :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .levelupbusiness {
+    flex-direction: row;
+  }
+
+  .levelupbusiness > .image > div > img {
+    left: 30px !important;
+  }
+
+  .businessshop {
+    flex-direction: row;
+  }
+
+  .businessshop > .image > div > img {
+    left: 30px !important;
+  }
+
+  .webdesign {
+    flex-direction: row-reverse;
+  }
+
+  .webdesign > .image > div > img {
+    left: -110px !important;
+  }
+
+  .designmessages {
+    flex-direction: row;
+  }
+
+  .designmessages > .image > div > img {
+    left: 30px !important;
+  }
+
+  .maintenancedesign {
+    flex-direction: row-reverse;
+  }
+
+  .maintenancedesign > .image > div > img {
+    left: -110px !important;
+  }
+
+  .testimonials > div:nth-child(2) {
+    flex-direction: row-reverse;
+    margin-top: 4rem;
+  }
+
+  .testimonials > div:nth-child(2) > .image {
+    display: block;
+  }
+
+  .testimonials > div:nth-child(2) > .image > div > img {
+    left: -40px !important;
+  }
+
+  .testimonials2 {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .testimonials2 > :not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .startyourbusinessnow .title {
+    font-size: 2rem;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .ellipse {
+    display: block;
+  }
+
+  .levelupbusiness > .content {
+    max-width: 420px;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .image {
+    display: block;
+  }
+
+  .logobrands > .logos {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .businessshop > .content {
+    max-width: 510px;
+  }
+
+  .webdesign > .content {
+    max-width: 510px;
+  }
+
+  .designmessages > .content {
+    max-width: 510px;
+  }
+
+  .maintenancedesign > .content {
+    max-width: 510px;
+  }
+
+  .services > .cards {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .services > .cards > :not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+
+  .services > .cards > .card {
+    max-width: 350px;
+  }
+
+  .testimonials > div:nth-child(2) > .content {
+    max-width: 510px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .levelupbusiness > .image > div > img {
+    left: 70px !important;
+  }
+
+  .businessshop > .image > div > img {
+    left: 70px !important;
+  }
+
+  .webdesign > .image > div > img {
+    left: -195px !important;
+  }
+
+  .designmessages > .image > div > img {
+    left: 70px !important;
+  }
+
+  .maintenancedesign > .image > div > img {
+    left: -195px !important;
+  }
+
+  .testimonials > div:nth-child(2) > .image > div > img {
+    left: -150px !important;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .levelupbusiness > .image > div > img {
+    left: 110px !important;
+  }
+
+  .businessshop > .image > div > img {
+    left: 110px !important;
+  }
+
+  .webdesign > .image > div > img {
+    left: -200px !important;
+  }
+
+  .designmessages > .image > div > img {
+    left: 110px !important;
+  }
+
+  .maintenancedesign > .image > div > img {
+    left: -200px !important;
+  }
+
+  .testimonials > div:nth-child(2) > .image > div > img {
+    left: -200px !important;
   }
 }

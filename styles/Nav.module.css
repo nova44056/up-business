@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.hamburger {
+  color: var(--purple);
+  cursor: pointer;
+}
+
+.nav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--purple);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  user-select: none;
+}
+
+.nav.expand {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.nav > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+}
+
+.nav > ul > :not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    position: unset;
+    width: max-content;
+    clip-path: none;
+    padding: 0;
+  }
+
+  .nav > ul {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .nav > ul > :not(:last-child) {
+    margin-bottom: 0;
+    margin-right: 1rem;
+  }
+}

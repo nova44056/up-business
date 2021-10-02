@@ -1,0 +1,20 @@
+.container {
+  text-transform: uppercase;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  user-select: none;
+}
+
+.container > :first-child {
+  color: var(--pink);
+  font-weight: bolder;
+  font-size: 24px;
+  stroke-width: 0.5px;
+}
+
+.container > :last-child {
+  color: var(--purple);
+  white-space: nowrap;
+  font-family: "SF Pro Display Semibold";
+}
