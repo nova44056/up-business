@@ -56,6 +56,7 @@ const Home: NextPage = () => {
           <div className={css.image}>
             <div className={ctx(css.ellipse, css.topright)} />
             <Image
+              alt="build"
               width={1000}
               height={700}
               src="/Build 1.svg"
@@ -72,19 +73,19 @@ const Home: NextPage = () => {
           </span>
           <div className={css.logos}>
             <div>
-              <Image src="/brand 1.svg" width={120} height={120} />
+              <Image alt="brand" src="/brand 1.svg" width={120} height={120} />
             </div>
             <div>
-              <Image src="/brand 2.svg" width={120} height={120} />
+              <Image alt="brand" src="/brand 2.svg" width={120} height={120} />
             </div>
             <div>
-              <Image src="/brand 3.svg" width={120} height={120} />
+              <Image alt="brand" src="/brand 3.svg" width={120} height={120} />
             </div>
             <div>
-              <Image src="/brand 4.svg" width={120} height={120} />
+              <Image alt="brand" src="/brand 4.svg" width={120} height={120} />
             </div>
             <div>
-              <Image src="/brand 5.svg" width={120} height={120} />
+              <Image alt="brand" src="/brand 5.svg" width={120} height={120} />
             </div>
           </div>
         </div>
@@ -123,6 +124,7 @@ const Home: NextPage = () => {
             <Image
               width={1000}
               height={700}
+              alt="ecommerce"
               src="/e-Commerce 1.svg"
               objectFit="cover"
             />
@@ -159,6 +161,7 @@ const Home: NextPage = () => {
               width={1000}
               height={700}
               src="/Finance 1.svg"
+              alt="finance"
               objectFit="cover"
             />
             <div
@@ -200,6 +203,7 @@ const Home: NextPage = () => {
           </div>
           <div className={css.image}>
             <Image
+              alt="messages"
               width={1000}
               height={700}
               src="/Messages 1.svg"
@@ -235,6 +239,7 @@ const Home: NextPage = () => {
           </div>
           <div className={css.image}>
             <Image
+              alt="service"
               width={1000}
               height={700}
               src="/Service 1.svg"
@@ -257,7 +262,12 @@ const Home: NextPage = () => {
           </div>
           <div className={css.cards}>
             <div className={css.card}>
-              <Image src="/Search 1.svg" width={310} height={310} />
+              <Image
+                alt="search"
+                src="/Search 1.svg"
+                width={310}
+                height={310}
+              />
               <div className={css.title}>Web development</div>
               <div className={css.subtitle}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -269,7 +279,12 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className={css.card}>
-              <Image src="/Instagram Shot 1.svg" width={310} height={310} />
+              <Image
+                alt="instagram"
+                src="/Instagram Shot 1.svg"
+                width={310}
+                height={310}
+              />
               <div className={css.title}>Mobile development</div>
               <div className={css.subtitle}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -281,7 +296,12 @@ const Home: NextPage = () => {
               </div>
             </div>
             <div className={css.card}>
-              <Image src="/Product Launch 1.svg" width={310} height={310} />
+              <Image
+                alt="product launch"
+                src="/Product Launch 1.svg"
+                width={310}
+                height={310}
+              />
               <div className={css.title}>Product design</div>
               <div className={css.subtitle}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -327,7 +347,12 @@ const Home: NextPage = () => {
               </div>
               <div className={css.card}>
                 <div className={css.image}>
-                  <Image width={50} height={50} src="/memoji female 14.svg" />
+                  <Image
+                    alt="memoji"
+                    width={50}
+                    height={50}
+                    src="/memoji female 14.svg"
+                  />
                 </div>
                 <div className={css.subtitle}>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -369,6 +394,7 @@ const Home: NextPage = () => {
             </div>
             <div className={css.image}>
               <Image
+                alt="awards"
                 width={1000}
                 height={700}
                 src="/Awards 1.svg"
@@ -379,7 +405,12 @@ const Home: NextPage = () => {
           <div className={css.testimonials2}>
             <div className={css.card}>
               <div className={css.image}>
-                <Image src="/memoji male 02.svg" width={50} height={50} />
+                <Image
+                  alt="memoji"
+                  src="/memoji male 02.svg"
+                  width={50}
+                  height={50}
+                />
               </div>
               <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -398,7 +429,12 @@ const Home: NextPage = () => {
             </div>
             <div className={css.card}>
               <div className={css.image}>
-                <Image src="/memoji female 06.svg" width={50} height={50} />
+                <Image
+                  alt="memoji"
+                  src="/memoji female 06.svg"
+                  width={50}
+                  height={50}
+                />
               </div>
               <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -417,7 +453,12 @@ const Home: NextPage = () => {
             </div>
             <div className={css.card}>
               <div className={css.image}>
-                <Image src="/memoji male 12.svg" width={50} height={50} />
+                <Image
+                  alt="memoji"
+                  src="/memoji male 12.svg"
+                  width={50}
+                  height={50}
+                />
               </div>
               <div>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
@@ -444,6 +485,7 @@ const Home: NextPage = () => {
             <Image
               width={500}
               height={500}
+              alt="shopping"
               src="/Shopping 1.svg"
               objectFit="cover"
             />
@@ -465,16 +507,36 @@ const Home: NextPage = () => {
             </div>
             <div className={css.socials}>
               <div className={css.social}>
-                <Image src="/dribbble.svg" width={24} height={24} />
+                <Image
+                  alt="dribble"
+                  src="/dribbble.svg"
+                  width={24}
+                  height={24}
+                />
               </div>
               <div className={css.social}>
-                <Image src="/instagram.svg" width={24} height={24} />
+                <Image
+                  alt="instagram"
+                  src="/instagram.svg"
+                  width={24}
+                  height={24}
+                />
               </div>
               <div className={css.social}>
-                <Image src="/facebook.svg" width={24} height={24} />
+                <Image
+                  alt="facebook"
+                  src="/facebook.svg"
+                  width={24}
+                  height={24}
+                />
               </div>
               <div className={css.social}>
-                <Image src="/twitter.svg" width={24} height={24} />
+                <Image
+                  alt="twitter"
+                  src="/twitter.svg"
+                  width={24}
+                  height={24}
+                />
               </div>
             </div>
           </div>
