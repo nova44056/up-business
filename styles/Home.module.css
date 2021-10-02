@@ -712,8 +712,8 @@
   }
 
   .footer {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 10rem;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
   }
 }
 
@@ -771,6 +771,10 @@
 
   .testimonials > div:nth-child(2) > .content {
     max-width: 510px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
 
